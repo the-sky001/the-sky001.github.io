@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20260831-2" />
 </head>
 <body>
   <header class="site-header">
@@ -27,9 +27,9 @@
         <a href="#blog" data-i18n="nav.blog">Notes</a>
       </nav>
       <div class="lang-switch" aria-label="Language selector">
-        <button data-lang="en" class="active">EN</button>
-        <button data-lang="ja">日本語</button>
-        <button data-lang="zh">中文</button>
+        <button type="button" data-lang="en" class="active" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang="ja" aria-pressed="false" lang="ja">日本語</button>
+        <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
       </div>
     </div>
   </header>
@@ -105,8 +105,12 @@
       </div>
       <div class="pub-list">
         <article class="pub-item featured">
-          <div class="pub-year">2024</div>
-          <div>
+          <a class="pub-figure" href="img/widistill-framework.png" target="_blank" rel="noopener">
+            <img src="img/widistill-framework.png" width="1216" height="488" loading="lazy" decoding="async" alt="WiDistill framework: random sampling, expert trajectory generation, and trajectory matching" data-i18n-alt="pub.widistill.alt" />
+            <span data-i18n="pub.figure">View full-size figure ↗</span>
+          </a>
+          <div class="pub-content">
+            <div class="pub-year">2024</div>
             <div class="pub-tags"><span>First Author</span><span>Wi-Fi Sensing</span></div>
             <h3>WiDistill: Distilling Large-scale Wi-Fi Datasets with Trajectory Matching</h3>
             <p data-i18n="pub.widistill">Dataset distillation and trajectory matching for improving training efficiency and cross-user generalization in large-scale Wi-Fi sensing.</p>
@@ -114,16 +118,24 @@
           </div>
         </article>
         <article class="pub-item">
-          <div class="pub-year">TCCN</div>
-          <div>
+          <a class="pub-figure" href="img/awn-architecture.png" target="_blank" rel="noopener">
+            <img src="img/awn-architecture.png" width="1196" height="629" loading="lazy" decoding="async" alt="Adaptive Wavelet Network architecture with multi-level decomposition and attention" data-i18n-alt="pub.awn.alt" />
+            <span data-i18n="pub.figure">View full-size figure ↗</span>
+          </a>
+          <div class="pub-content">
+            <div class="pub-year">TCCN</div>
             <div class="pub-tags"><span>Second Author</span><span>RF / Deep Learning</span></div>
             <h3>Towards the Automatic Modulation Classification with Adaptive Wavelet Network</h3>
             <p>IEEE Transactions on Cognitive Communications and Networking</p>
           </div>
         </article>
         <article class="pub-item">
-          <div class="pub-year">ICASSP</div>
-          <div>
+          <a class="pub-figure" href="img/amc-net-architecture.png" target="_blank" rel="noopener">
+            <img src="img/amc-net-architecture.png" width="947" height="759" loading="lazy" decoding="async" alt="AMC-Net architecture with adaptive correction, multi-scale, and feature fusion modules" data-i18n-alt="pub.amc.alt" />
+            <span data-i18n="pub.figure">View full-size figure ↗</span>
+          </a>
+          <div class="pub-content">
+            <div class="pub-year">ICASSP</div>
             <div class="pub-tags"><span>Second Author</span><span>Signal Classification</span></div>
             <h3>AMC-NET: An Effective Network for Automatic Modulation Classification</h3>
             <p>IEEE International Conference on Acoustics, Speech and Signal Processing</p>
@@ -157,15 +169,46 @@
       <p class="section-kicker" data-i18n="nav.education">Education</p>
       <div class="education-grid">
         <article class="edu-card">
-          <div class="edu-mark">UT</div>
+          <img class="edu-logo" src="img/university-of-tokyo-logo.png" width="250" height="251" loading="lazy" decoding="async" alt="The University of Tokyo logo" data-i18n-alt="edu.ut.alt" />
           <div><p class="date">2026.10 — 2028.10 (Expected)</p><h3 data-i18n="edu.ut.title">The University of Tokyo</h3><p data-i18n="edu.ut.degree">M.S. in Information Science and Technology</p><p class="subtle" data-i18n="edu.ut.dept">Department of Information Physics and Computing</p></div>
         </article>
         <article class="edu-card">
-          <div class="edu-mark">XDU</div>
+          <img class="edu-logo" src="img/xidian-university-logo.png" width="1024" height="1012" loading="lazy" decoding="async" alt="Xidian University emblem" data-i18n-alt="edu.xdu.alt" />
           <div><p class="date">2020.09 — 2024.07</p><h3 data-i18n="edu.xdu.title">Xidian University</h3><p data-i18n="edu.xdu.degree">B.Eng. in Artificial Intelligence, Turing Program</p><p class="subtle" data-i18n="edu.xdu.detail">Selected among 40 students from 1,450 undergraduates · GPA 3.7/4.0</p></div>
         </article>
       </div>
-      <div class="award-banner"><strong data-i18n="award.title">Award</strong><span data-i18n="award.body">Kaggle G2Net: Detecting Continuous Gravitational Waves — Silver Medal, Top 5% (2023)</span></div>
+      <article id="awards" class="award-card" aria-labelledby="award-heading">
+        <div class="award-header">
+          <div>
+            <p class="section-kicker" data-i18n="award.title">Competition award</p>
+            <h2 id="award-heading">G2Net Detecting Continuous Gravitational Waves</h2>
+            <p class="award-organizer" data-i18n="award.organizer">Kaggle · European Gravitational Observatory (EGO) · 2023</p>
+          </div>
+          <span class="medal-badge" data-i18n="award.medal">Silver Medal</span>
+        </div>
+        <p class="award-result" data-i18n="award.body">Silver Medal · 45th of 936 teams · Top 5%</p>
+        <figure class="award-proof">
+          <a href="img/kaggle-g2net-silver-medal.png" target="_blank" rel="noopener">
+            <img src="img/kaggle-g2net-silver-medal.png" width="1534" height="493" loading="lazy" decoding="async" alt="Kaggle result: silver medal, team placed 45th out of 936 teams" data-i18n-alt="award.result.alt" />
+          </a>
+          <figcaption data-i18n="award.result.caption">Competition result — Silver Medal, 45 / 936 teams. Select the image to view it full size.</figcaption>
+        </figure>
+        <div class="award-details">
+          <div class="award-description">
+            <h3 data-i18n="award.goal.title">Goal of the competition</h3>
+            <p data-i18n="award.goal">Detect weak, long-lasting gravitational-wave signals emitted by rapidly spinning neutron stars in noisy data. The competition challenges participants to develop models sensitive enough to identify these continuous signals.</p>
+            <h3 data-i18n="award.context.title">Scientific context</h3>
+            <p data-i18n="award.context">Neutron stars pack a mass comparable to the Sun into a city-sized object. Searching for their continuous gravitational waves could reveal new insights into the structure of these extreme stars and help broaden gravitational-wave astronomy.</p>
+            <a class="button" href="https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves" target="_blank" rel="noopener" data-i18n="award.link">View competition ↗</a>
+          </div>
+          <figure class="award-context-figure">
+            <a href="img/kaggle-g2net-scientific-context.png" target="_blank" rel="noopener">
+              <img src="img/kaggle-g2net-scientific-context.png" width="966" height="749" loading="lazy" decoding="async" alt="Competition background chart showing strain sensitivity versus gravitational-wave frequency for pulsars" data-i18n-alt="award.context.alt" />
+            </a>
+            <figcaption data-i18n="award.context.caption">Scientific background figure from the competition overview: strain sensitivity versus gravitational-wave frequency.</figcaption>
+          </figure>
+        </div>
+      </article>
     </section>
 
     <section id="blog" class="section muted-bg">
@@ -182,6 +225,6 @@
       <span data-i18n="footer.text">Academic homepage · Tokyo</span>
     </div>
   </footer>
-  <script src="app.js"></script>
+  <script src="app.js?v=20260831-2"></script>
 </body>
 </html>
