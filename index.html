@@ -3,228 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Tiantian Wang — researcher in human-centered robotics, multimodal sensing, and machine learning." />
-  <meta property="og:title" content="Tiantian Wang | Academic Homepage" />
+  <meta name="description" content="Tiantian Wang, researcher in human-centered robotics, multimodal sensing, and machine learning." />
+  <meta property="og:title" content="Tiantian Wang" />
   <meta property="og:description" content="Human-centered robotics, multimodal sensing, and machine learning." />
   <meta property="og:image" content="https://raw.githubusercontent.com/the-sky001/the-sky001.github.io/main/img/tx.jpg" />
-  <meta name="theme-color" content="#f7f8fb" />
-  <title>Tiantian Wang | Academic Homepage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css?v=20260831-2" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Tiantian Wang</title>
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="style.css?v=20260831-3" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top">TW</a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#research" data-i18n="nav.research">Research</a>
-        <a href="#publications" data-i18n="nav.publications">Publications</a>
-        <a href="#experience" data-i18n="nav.experience">Experience</a>
-        <a href="#education" data-i18n="nav.education">Education</a>
-        <a href="#blog" data-i18n="nav.blog">Notes</a>
+  <div class="page" id="top">
+    <header class="page-header">
+      <nav class="section-nav" aria-label="Page sections">
+        <a href="#publications" data-i18n="nav.publications">Publications</a><a href="#education" data-i18n="nav.education">Education</a><a href="#experience" data-i18n="nav.experience">Experience</a><a href="#awards" data-i18n="nav.awards">Awards</a><a href="#blog" data-i18n="nav.blog">Notes</a>
       </nav>
       <div class="lang-switch" aria-label="Language selector">
-        <button type="button" data-lang="en" class="active" aria-pressed="true" lang="en">EN</button>
-        <button type="button" data-lang="ja" aria-pressed="false" lang="ja">日本語</button>
+        <button type="button" data-lang="en" class="active" aria-pressed="true" lang="en">English</button>
         <button type="button" data-lang="zh" aria-pressed="false" lang="zh-CN">中文</button>
+        <button type="button" data-lang="ja" aria-pressed="false" lang="ja">日本語</button>
       </div>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Academic Homepage</p>
-        <h1>Tiantian Wang <span>王天天</span></h1>
-        <p class="hero-role" data-i18n="hero.role">M.S. Student · The University of Tokyo</p>
-        <p class="hero-summary" data-i18n="hero.summary">I work on human-centered robotics, multimodal sensing, and machine learning, with an interest in building systems that understand people and collaborate with them naturally.</p>
-        <div class="hero-links">
-          <a class="button primary" href="mailto:tiantianw30@gmail.com">Email</a>
-          <a class="button" href="https://github.com/the-sky001" target="_blank" rel="noopener">GitHub</a>
-          <a class="button" href="#publications" data-i18n="hero.publications">Publications</a>
+    </header>
+    <main>
+      <section id="about" class="introduction">
+        <div class="bio">
+          <h1>Tiantian Wang <span lang="zh-CN">王天天</span></h1>
+          <p data-i18n="bio1">I am an M.S. student at the University of Tokyo, in the Department of Information Physics and Computing. I received my B.Eng. in Artificial Intelligence from Xidian University, where I was part of the Turing Program.</p><p id="research" data-i18n="bio2">My research interests include human-centered robotics, multimodal sensing, and machine learning. I work with Wi-Fi CSI, wearable IMUs, and vision to understand human activity. Previously, I studied RF signal processing and automatic modulation classification.</p>
+          <div class="contact-links"><a href="mailto:tiantianw30@gmail.com">Email</a><a href="https://github.com/the-sky001" target="_blank" rel="noopener">GitHub</a></div>
         </div>
-        <div class="focus-row">
-          <span data-i18n="focus.robotics">Human-Centered Robotics</span>
-          <span data-i18n="focus.sensing">Multimodal Sensing</span>
-          <span data-i18n="focus.ml">Machine Learning</span>
-          <span data-i18n="focus.hci">HCI</span>
-        </div>
-      </div>
-      <div class="hero-photo-wrap">
-        <img class="hero-photo" src="https://raw.githubusercontent.com/the-sky001/the-sky001.github.io/main/img/tx.jpg" alt="Tiantian Wang" />
-        <div class="photo-caption" data-i18n="hero.location">Tokyo, Japan</div>
-      </div>
-    </section>
-
-    <section id="about" class="section container two-col">
-      <div>
-        <p class="section-kicker" data-i18n="nav.about">About</p>
-        <h2 data-i18n="about.title">Researching intelligent systems around people.</h2>
-      </div>
-      <div class="prose">
-        <p data-i18n="about.p1">I am an M.S. student at the University of Tokyo. My current research explores multimodal sensing and learning for understanding human motion, intention, and physical states, together with human-centered robotics, shared autonomy, and robotic augmentation.</p>
-        <p data-i18n="about.p2">Previously, I worked on multimodal human sensing with Wi-Fi CSI, wearable IMUs, and computer vision, as well as RF signal processing and automatic modulation classification with deep learning.</p>
-      </div>
-    </section>
-
-    <section id="research" class="section muted-bg">
-      <div class="container">
-        <p class="section-kicker" data-i18n="nav.research">Research</p>
-        <div class="section-head">
-          <h2 data-i18n="research.title">Research directions</h2>
-          <p data-i18n="research.subtitle">My work connects perception, learning, and interaction.</p>
-        </div>
-        <div class="cards three">
-          <article class="card">
-            <div class="card-index">01</div>
-            <h3 data-i18n="research.r1.title">Human-Centered Robotics</h3>
-            <p data-i18n="research.r1.body">Human-robot interaction, shared autonomy, and robotic augmentation for adaptive and intuitive collaboration.</p>
-          </article>
-          <article class="card">
-            <div class="card-index">02</div>
-            <h3 data-i18n="research.r2.title">Multimodal Human Sensing</h3>
-            <p data-i18n="research.r2.body">Combining Wi-Fi CSI, wearable IMUs, and vision to recognize activities, identities, pose, and physical states.</p>
-          </article>
-          <article class="card">
-            <div class="card-index">03</div>
-            <h3 data-i18n="research.r3.title">Machine Learning for Signals</h3>
-            <p data-i18n="research.r3.body">Learning efficient and robust representations for wireless and RF signals under real-world channel and noise conditions.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="publications" class="section container">
-      <p class="section-kicker" data-i18n="nav.publications">Publications</p>
-      <div class="section-head">
+        <img class="portrait" src="img/tx.jpg" alt="Tiantian Wang" fetchpriority="high" />
+      </section>
+      <section id="publications" class="section">
         <h2 data-i18n="pub.title">Selected publications</h2>
-        <p data-i18n="pub.subtitle">Publications and preprints listed in my CV.</p>
-      </div>
-      <div class="pub-list">
-        <article class="pub-item featured">
-          <a class="pub-figure" href="img/widistill-framework.png" target="_blank" rel="noopener">
-            <img src="img/widistill-framework.png" width="1216" height="488" loading="lazy" decoding="async" alt="WiDistill framework: random sampling, expert trajectory generation, and trajectory matching" data-i18n-alt="pub.widistill.alt" />
-            <span data-i18n="pub.figure">View full-size figure ↗</span>
-          </a>
-          <div class="pub-content">
-            <div class="pub-year">2024</div>
-            <div class="pub-tags"><span>First Author</span><span>Wi-Fi Sensing</span></div>
-            <h3>WiDistill: Distilling Large-scale Wi-Fi Datasets with Trajectory Matching</h3>
-            <p data-i18n="pub.widistill">Dataset distillation and trajectory matching for improving training efficiency and cross-user generalization in large-scale Wi-Fi sensing.</p>
-            <div class="pub-links"><a href="https://arxiv.org/abs/2410.04073" target="_blank" rel="noopener">arXiv:2410.04073 ↗</a></div>
+        <div class="publication-list">
+        <article class="publication">
+          <a class="paper-image" href="img/widistill-framework.png" target="_blank" rel="noopener"><img src="img/widistill-framework.png" width="1216" height="488" loading="lazy" decoding="async" alt="WiDistill framework: random sampling, expert trajectory generation, and trajectory matching" data-i18n-alt="pub.widistill.alt" /></a>
+          <div class="paper-text">
+            <h3><a href="https://arxiv.org/abs/2410.04073" target="_blank" rel="noopener">WiDistill: Distilling Large-scale Wi-Fi Datasets with Trajectory Matching</a></h3>
+            <p class="paper-role" data-i18n="pub.first">First author</p>
+            <p class="venue">arXiv, 2024</p>
+            <p class="paper-description" data-i18n="pub.widistill">Dataset distillation with trajectory matching for efficient training and cross-user generalization in Wi-Fi sensing.</p>
+            <div class="paper-links"><a href="https://arxiv.org/abs/2410.04073" target="_blank" rel="noopener" data-i18n="pub.paper">Paper</a><a href="img/widistill-framework.png" target="_blank" rel="noopener" data-i18n="pub.figure">Figure</a></div>
           </div>
         </article>
-        <article class="pub-item">
-          <a class="pub-figure" href="img/awn-architecture.png" target="_blank" rel="noopener">
-            <img src="img/awn-architecture.png" width="1196" height="629" loading="lazy" decoding="async" alt="Adaptive Wavelet Network architecture with multi-level decomposition and attention" data-i18n-alt="pub.awn.alt" />
-            <span data-i18n="pub.figure">View full-size figure ↗</span>
-          </a>
-          <div class="pub-content">
-            <div class="pub-year">TCCN</div>
-            <div class="pub-tags"><span>Second Author</span><span>RF / Deep Learning</span></div>
+
+        <article class="publication">
+          <a class="paper-image" href="img/awn-architecture.png" target="_blank" rel="noopener"><img src="img/awn-architecture.png" width="1196" height="629" loading="lazy" decoding="async" alt="Adaptive Wavelet Network architecture with multi-level decomposition and attention" data-i18n-alt="pub.awn.alt" /></a>
+          <div class="paper-text">
             <h3>Towards the Automatic Modulation Classification with Adaptive Wavelet Network</h3>
-            <p>IEEE Transactions on Cognitive Communications and Networking</p>
+            <p class="paper-role" data-i18n="pub.second">Second author</p>
+            <p class="venue">IEEE Transactions on Cognitive Communications and Networking</p>
+            <p class="paper-description" data-i18n="pub.awn">Automatic modulation classification through multi-level wavelet decomposition and attention.</p>
+            <div class="paper-links"><a href="img/awn-architecture.png" target="_blank" rel="noopener" data-i18n="pub.figure">Figure</a></div>
           </div>
         </article>
-        <article class="pub-item">
-          <a class="pub-figure" href="img/amc-net-architecture.png" target="_blank" rel="noopener">
-            <img src="img/amc-net-architecture.png" width="947" height="759" loading="lazy" decoding="async" alt="AMC-Net architecture with adaptive correction, multi-scale, and feature fusion modules" data-i18n-alt="pub.amc.alt" />
-            <span data-i18n="pub.figure">View full-size figure ↗</span>
-          </a>
-          <div class="pub-content">
-            <div class="pub-year">ICASSP</div>
-            <div class="pub-tags"><span>Second Author</span><span>Signal Classification</span></div>
+
+        <article class="publication">
+          <a class="paper-image" href="img/amc-net-architecture.png" target="_blank" rel="noopener"><img src="img/amc-net-architecture.png" width="947" height="759" loading="lazy" decoding="async" alt="AMC-Net architecture with adaptive correction, multi-scale, and feature fusion modules" data-i18n-alt="pub.amc.alt" /></a>
+          <div class="paper-text">
             <h3>AMC-NET: An Effective Network for Automatic Modulation Classification</h3>
-            <p>IEEE International Conference on Acoustics, Speech and Signal Processing</p>
+            <p class="paper-role" data-i18n="pub.second">Second author</p>
+            <p class="venue">IEEE International Conference on Acoustics, Speech and Signal Processing</p>
+            <p class="paper-description" data-i18n="pub.amc">Automatic modulation classification with adaptive correction, multi-scale features, and feature fusion.</p>
+            <div class="paper-links"><a href="img/amc-net-architecture.png" target="_blank" rel="noopener" data-i18n="pub.figure">Figure</a></div>
           </div>
+        </article></div>
+      </section>
+      <section id="education" class="section">
+        <h2 data-i18n="nav.education">Education</h2>
+        <div class="education-list">
+        <article class="education-entry">
+          <img class="university-logo" src="img/university-of-tokyo-logo.png" width="250" height="251" loading="lazy" decoding="async" alt="The University of Tokyo logo" data-i18n-alt="edu.ut.alt" />
+          <div><div class="entry-heading"><h3 data-i18n="edu.ut.title">The University of Tokyo</h3><p class="date" data-i18n="edu.ut.date">Oct. 2026 to Oct. 2028 (expected)</p></div><p data-i18n="edu.ut.degree">M.S. in Information Science and Technology</p><p class="secondary" data-i18n="edu.ut.dept">Department of Information Physics and Computing</p></div>
         </article>
-      </div>
-    </section>
 
-    <section id="experience" class="section muted-bg">
-      <div class="container">
-        <p class="section-kicker" data-i18n="nav.experience">Experience</p>
-        <div class="section-head"><h2 data-i18n="exp.title">Research experience</h2></div>
-        <div class="timeline">
-          <article>
-            <div class="time">2026 — 2028</div>
-            <div><h3 data-i18n="exp.e1.title">Human-Centered Robotics & Human-Computer Interaction</h3><p class="place" data-i18n="exp.e1.place">The University of Tokyo</p><p data-i18n="exp.e1.body">Multimodal perception, shared autonomy, robotic augmentation, and adaptive human-machine collaboration.</p></div>
-          </article>
-          <article>
-            <div class="time">2023 — 2026</div>
-            <div><h3 data-i18n="exp.e2.title">Multimodal Human Sensing & Activity Recognition</h3><p data-i18n="exp.e2.body">Wi-Fi CSI, wearable IMUs, computer vision, human identification, 3D pose estimation, and dataset distillation.</p></div>
-          </article>
-          <article>
-            <div class="time">2021 — 2023</div>
-            <div><h3 data-i18n="exp.e3.title">RF Signal Processing & Machine Learning</h3><p class="place" data-i18n="exp.e3.place">Key Laboratory of Intelligent Perception and Image Understanding</p><p data-i18n="exp.e3.body">Deep learning and time-frequency representations for robust automatic modulation classification.</p></div>
-          </article>
-        </div>
-      </div>
-    </section>
+        <article class="education-entry">
+          <img class="university-logo" src="img/xidian-university-logo.png" width="1024" height="1012" loading="lazy" decoding="async" alt="Xidian University emblem" data-i18n-alt="edu.xdu.alt" />
+          <div><div class="entry-heading"><h3 data-i18n="edu.xdu.title">Xidian University</h3><p class="date" data-i18n="edu.xdu.date">Sep. 2020 to Jul. 2024</p></div><p data-i18n="edu.xdu.degree">B.Eng. in Artificial Intelligence, Turing Program</p><p class="secondary" data-i18n="edu.xdu.detail">Selected among 40 students from 1,450 undergraduates. GPA: 3.7/4.0.</p></div>
+        </article></div>
+      </section>
+      <section id="experience" class="section">
+        <h2 data-i18n="exp.title">Research experience</h2>
+        <div class="experience-list">
+        <article class="experience-entry"><p class="date">2026–2028</p><div><h3 data-i18n="exp.e1.title">Human-centered robotics and human-computer interaction</h3><p class="secondary" data-i18n="exp.e1.place">The University of Tokyo</p><p data-i18n="exp.e1.body">Multimodal perception, shared autonomy, robotic augmentation, and adaptive human-machine collaboration.</p></div></article>
 
-    <section id="education" class="section container">
-      <p class="section-kicker" data-i18n="nav.education">Education</p>
-      <div class="education-grid">
-        <article class="edu-card">
-          <img class="edu-logo" src="img/university-of-tokyo-logo.png" width="250" height="251" loading="lazy" decoding="async" alt="The University of Tokyo logo" data-i18n-alt="edu.ut.alt" />
-          <div><p class="date">2026.10 — 2028.10 (Expected)</p><h3 data-i18n="edu.ut.title">The University of Tokyo</h3><p data-i18n="edu.ut.degree">M.S. in Information Science and Technology</p><p class="subtle" data-i18n="edu.ut.dept">Department of Information Physics and Computing</p></div>
-        </article>
-        <article class="edu-card">
-          <img class="edu-logo" src="img/xidian-university-logo.png" width="1024" height="1012" loading="lazy" decoding="async" alt="Xidian University emblem" data-i18n-alt="edu.xdu.alt" />
-          <div><p class="date">2020.09 — 2024.07</p><h3 data-i18n="edu.xdu.title">Xidian University</h3><p data-i18n="edu.xdu.degree">B.Eng. in Artificial Intelligence, Turing Program</p><p class="subtle" data-i18n="edu.xdu.detail">Selected among 40 students from 1,450 undergraduates · GPA 3.7/4.0</p></div>
-        </article>
-      </div>
-      <article id="awards" class="award-card" aria-labelledby="award-heading">
-        <div class="award-header">
-          <div>
-            <p class="section-kicker" data-i18n="award.title">Competition award</p>
-            <h2 id="award-heading">G2Net Detecting Continuous Gravitational Waves</h2>
-            <p class="award-organizer" data-i18n="award.organizer">Kaggle · European Gravitational Observatory (EGO) · 2023</p>
-          </div>
-          <span class="medal-badge" data-i18n="award.medal">Silver Medal</span>
-        </div>
-        <p class="award-result" data-i18n="award.body">Silver Medal · 45th of 936 teams · Top 5%</p>
-        <figure class="award-proof">
-          <a href="img/kaggle-g2net-silver-medal.png" target="_blank" rel="noopener">
-            <img src="img/kaggle-g2net-silver-medal.png" width="1534" height="493" loading="lazy" decoding="async" alt="Kaggle result: silver medal, team placed 45th out of 936 teams" data-i18n-alt="award.result.alt" />
-          </a>
-          <figcaption data-i18n="award.result.caption">Competition result — Silver Medal, 45 / 936 teams. Select the image to view it full size.</figcaption>
-        </figure>
-        <div class="award-details">
-          <div class="award-description">
-            <h3 data-i18n="award.goal.title">Goal of the competition</h3>
-            <p data-i18n="award.goal">Detect weak, long-lasting gravitational-wave signals emitted by rapidly spinning neutron stars in noisy data. The competition challenges participants to develop models sensitive enough to identify these continuous signals.</p>
-            <h3 data-i18n="award.context.title">Scientific context</h3>
-            <p data-i18n="award.context">Neutron stars pack a mass comparable to the Sun into a city-sized object. Searching for their continuous gravitational waves could reveal new insights into the structure of these extreme stars and help broaden gravitational-wave astronomy.</p>
-            <a class="button" href="https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves" target="_blank" rel="noopener" data-i18n="award.link">View competition ↗</a>
-          </div>
-          <figure class="award-context-figure">
-            <a href="img/kaggle-g2net-scientific-context.png" target="_blank" rel="noopener">
-              <img src="img/kaggle-g2net-scientific-context.png" width="966" height="749" loading="lazy" decoding="async" alt="Competition background chart showing strain sensitivity versus gravitational-wave frequency for pulsars" data-i18n-alt="award.context.alt" />
-            </a>
-            <figcaption data-i18n="award.context.caption">Scientific background figure from the competition overview: strain sensitivity versus gravitational-wave frequency.</figcaption>
+        <article class="experience-entry"><p class="date">2023–2026</p><div><h3 data-i18n="exp.e2.title">Multimodal human sensing and activity recognition</h3><p data-i18n="exp.e2.body">Wi-Fi CSI, wearable IMUs, computer vision, human identification, 3D pose estimation, and dataset distillation.</p></div></article>
+
+        <article class="experience-entry"><p class="date">2021–2023</p><div><h3 data-i18n="exp.e3.title">RF signal processing and machine learning</h3><p class="secondary" data-i18n="exp.e3.place">Key Laboratory of Intelligent Perception and Image Understanding</p><p data-i18n="exp.e3.body">Deep learning and time-frequency representations for robust automatic modulation classification.</p></div></article></div>
+      </section>
+      <section id="awards" class="section">
+        <h2 data-i18n="nav.awards">Awards</h2>
+        <article class="award">
+          <figure class="competition-figure">
+            <a href="img/kaggle-g2net-scientific-context.png" target="_blank" rel="noopener"><img src="img/kaggle-g2net-scientific-context.png" width="966" height="749" loading="lazy" decoding="async" alt="Competition background chart showing strain sensitivity versus gravitational-wave frequency for pulsars" data-i18n-alt="award.context.alt" /></a>
+            <figcaption data-i18n="award.context.caption">Scientific background figure from the competition overview.</figcaption>
           </figure>
-        </div>
-      </article>
-    </section>
-
-    <section id="blog" class="section muted-bg">
-      <div class="container blog-row">
-        <div><p class="section-kicker" data-i18n="nav.blog">Notes</p><h2 data-i18n="blog.title">Older writing, kept as an archive.</h2><p data-i18n="blog.body">My previous Hexo posts remain available as a small personal archive.</p></div>
-        <a class="button" href="/archives/" data-i18n="blog.button">View old archive →</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-row">
-      <span>© <span id="year"></span> Tiantian Wang</span>
-      <span data-i18n="footer.text">Academic homepage · Tokyo</span>
-    </div>
-  </footer>
-  <script src="app.js?v=20260831-2"></script>
+          <div class="award-text">
+            <h3>G2Net Detecting Continuous Gravitational Waves</h3>
+            <p class="award-result"><strong data-i18n="award.medal">Silver medal</strong><span data-i18n="award.body">45th out of 936 teams (top 5%), 2023</span></p>
+            <p data-i18n="award.brief">The competition focused on detecting weak, long-lasting gravitational-wave signals from rapidly spinning neutron stars in noisy data. This search could help scientists understand the structure of these extreme stars.</p><p class="secondary" data-i18n="award.organizer">Hosted on Kaggle by the European Gravitational Observatory.</p>
+            <a href="https://www.kaggle.com/competitions/g2net-detecting-continuous-gravitational-waves" target="_blank" rel="noopener" data-i18n="award.link">Competition</a>
+          </div>
+        </article>
+        <details class="medal-evidence">
+          <summary data-i18n="award.evidence">View medal result</summary>
+          <figure><a href="img/kaggle-g2net-silver-medal.png" target="_blank" rel="noopener"><img src="img/kaggle-g2net-silver-medal.png" width="1534" height="493" loading="lazy" decoding="async" alt="Kaggle result: silver medal, team placed 45th out of 936 teams" data-i18n-alt="award.result.alt" /></a><figcaption data-i18n="award.result.caption">Kaggle result: silver medal, 45th out of 936 teams.</figcaption></figure>
+        </details>
+      </section>
+      <section id="blog" class="section notes">
+        <h2 data-i18n="nav.blog">Notes</h2><p data-i18n="blog.body">I keep a small archive of older posts about learning and everyday life.</p><a href="/archives/" data-i18n="blog.button">Read the old blog</a>
+      </section>
+    </main>
+    <footer><span>Tiantian Wang, <span id="year"></span></span><a href="#top" data-i18n="footer.back">Back to top</a></footer>
+  </div>
+  <script src="app.js?v=20260831-3"></script>
 </body>
 </html>
