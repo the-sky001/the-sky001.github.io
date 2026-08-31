@@ -1,155 +1,187 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>天天~ - 人间正道是沧桑</title><meta name="author" content="王天天~"><meta name="copyright" content="王天天~"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="天天~">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="天天~">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/img/tx.jpg">
-<meta property="article:author" content="王天天~">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/img/tx.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  date_suffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '天天~',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2022-09-23 23:42:56'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tiantian Wang — researcher in human-centered robotics, multimodal sensing, and machine learning." />
+  <meta property="og:title" content="Tiantian Wang | Academic Homepage" />
+  <meta property="og:description" content="Human-centered robotics, multimodal sensing, and machine learning." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/the-sky001/the-sky001.github.io/main/img/tx.jpg" />
+  <meta name="theme-color" content="#f7f8fb" />
+  <title>Tiantian Wang | Academic Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">TW</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#research" data-i18n="nav.research">Research</a>
+        <a href="#publications" data-i18n="nav.publications">Publications</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="#education" data-i18n="nav.education">Education</a>
+        <a href="#blog" data-i18n="nav.blog">Notes</a>
+      </nav>
+      <div class="lang-switch" aria-label="Language selector">
+        <button data-lang="en" class="active">EN</button>
+        <button data-lang="ja">日本語</button>
+        <button data-lang="zh">中文</button>
+      </div>
+    </div>
+  </header>
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Academic Homepage</p>
+        <h1>Tiantian Wang <span>王天天</span></h1>
+        <p class="hero-role" data-i18n="hero.role">M.S. Student · The University of Tokyo</p>
+        <p class="hero-summary" data-i18n="hero.summary">I work on human-centered robotics, multimodal sensing, and machine learning, with an interest in building systems that understand people and collaborate with them naturally.</p>
+        <div class="hero-links">
+          <a class="button primary" href="mailto:tiantianw30@gmail.com">Email</a>
+          <a class="button" href="https://github.com/the-sky001" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="#publications" data-i18n="hero.publications">Publications</a>
+        </div>
+        <div class="focus-row">
+          <span data-i18n="focus.robotics">Human-Centered Robotics</span>
+          <span data-i18n="focus.sensing">Multimodal Sensing</span>
+          <span data-i18n="focus.ml">Machine Learning</span>
+          <span data-i18n="focus.hci">HCI</span>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <img class="hero-photo" src="https://raw.githubusercontent.com/the-sky001/the-sky001.github.io/main/img/tx.jpg" alt="Tiantian Wang" />
+        <div class="photo-caption" data-i18n="hero.location">Tokyo, Japan</div>
+      </div>
+    </section>
 
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
+    <section id="about" class="section container two-col">
+      <div>
+        <p class="section-kicker" data-i18n="nav.about">About</p>
+        <h2 data-i18n="about.title">Researching intelligent systems around people.</h2>
+      </div>
+      <div class="prose">
+        <p data-i18n="about.p1">I am an M.S. student at the University of Tokyo. My current research explores multimodal sensing and learning for understanding human motion, intention, and physical states, together with human-centered robotics, shared autonomy, and robotic augmentation.</p>
+        <p data-i18n="about.p2">Previously, I worked on multimodal human sensing with Wi-Fi CSI, wearable IMUs, and computer vision, as well as RF signal processing and automatic modulation classification with deep learning.</p>
+      </div>
+    </section>
 
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
+    <section id="research" class="section muted-bg">
+      <div class="container">
+        <p class="section-kicker" data-i18n="nav.research">Research</p>
+        <div class="section-head">
+          <h2 data-i18n="research.title">Research directions</h2>
+          <p data-i18n="research.subtitle">My work connects perception, learning, and interaction.</p>
+        </div>
+        <div class="cards three">
+          <article class="card">
+            <div class="card-index">01</div>
+            <h3 data-i18n="research.r1.title">Human-Centered Robotics</h3>
+            <p data-i18n="research.r1.body">Human-robot interaction, shared autonomy, and robotic augmentation for adaptive and intuitive collaboration.</p>
+          </article>
+          <article class="card">
+            <div class="card-index">02</div>
+            <h3 data-i18n="research.r2.title">Multimodal Human Sensing</h3>
+            <p data-i18n="research.r2.body">Combining Wi-Fi CSI, wearable IMUs, and vision to recognize activities, identities, pose, and physical states.</p>
+          </article>
+          <article class="card">
+            <div class="card-index">03</div>
+            <h3 data-i18n="research.r3.title">Machine Learning for Signals</h3>
+            <p data-i18n="research.r3.body">Learning efficient and robust representations for wireless and RF signals under real-world channel and noise conditions.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/tx.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/BP.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">天天~</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">天天~</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/23/%E8%B1%A1%E6%A3%8B%E6%84%9F%E6%82%9F1/" title="象棋感悟1"><img class="post_bg" src="/img/cover3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="象棋感悟1"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/23/%E8%B1%A1%E6%A3%8B%E6%84%9F%E6%82%9F1/" title="象棋感悟1">象棋感悟1</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-23T15:33:30.738Z" title="Created 2022-09-23 23:33:30">2022-09-23</time></span></div><div class="content">
-​	这张图是一张很典型的中炮对屏风马的布局。
-​	我无数次遇到过这个布局，但是走到这一步就开始信马由缰，胜率往往根据对手有多菜而决定。走到这一步，定式的变化开始变得异常繁多，同样一步棋，早走一步和晚走一步天差地别。同时有的看上去无用的布局又会在很晚之后展现作用。
-​	人有多余的脑力时就会开始联想。我不禁在想，同样是美赛，在大一的时候打与大二的时候打，效果就差距很大；同样是微积分，在高中会和大学会效果也不一样；至此联想到很多事情，某一句回答，某一个思想，某一个选择，早和晚，完全是两码事。世界是运动的，当事物发展、由量变变成质变的时候，拥有所需要的条件，是一个小概率事件。
-​	和这件事相联系的，就是看似无理手的深远布局。这在某种角度上，算是为之后某个必然出现的局面做好准备。比如出横俥，看似短期内并不能直接到达战场，却可以在很多步之后短兵相接的时候神兵天降。
-​	以上都只是对战术的思考。但是我发现我下了很多把，无论对棋局如何反思，和一个高手下，总是要吃亏。往往已经是优势却往往难以取胜，最后被一剑封喉。后来在知乎上看到一篇文章，讲的是作者通过自身努力，下赢了一个一直下不赢的老头。可是老头叫来 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/09/21/%E5%8D%9A%E5%AE%A2%E3%80%81%E7%AC%94%E8%AE%B0%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7/" title="博客、笔记的重要性"><img class="post_bg" src="/img/cover2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客、笔记的重要性"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/21/%E5%8D%9A%E5%AE%A2%E3%80%81%E7%AC%94%E8%AE%B0%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7/" title="博客、笔记的重要性">博客、笔记的重要性</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-21T15:08:12.911Z" title="Created 2022-09-21 23:08:12">2022-09-21</time></span></div><div class="content">​	想说很多，但是开篇还是说明白做这件事的意义会比较好。
-​	人的大脑就像CPU，处理的东西极快却较少。对大部分人而言记忆大量内容是十分困难切换需要长期训练的（比如高考）。因此，比较好的处理方式记笔记。第一，作为平时复习的资料；第二，即便不经常复习，但脑力只需存储关于这些知识的指针，需要用的时候可以直接调用；第三，写下这篇博客的时候，脑子里印象会加深，原理类似于费曼学习法。
-​	综上，目前博客的用处，对我而言更像是电子版的笔记。
-（什么年代了，谁还写传统笔记）
-附：hexo搭建博客教程速通:
-https://anzhiy.cn/posts/ddae.html
-没啥好总结的，懒得自己写一遍，这里就当指针的指针吧。（应该是被指针指向的指针）
+    <section id="publications" class="section container">
+      <p class="section-kicker" data-i18n="nav.publications">Publications</p>
+      <div class="section-head">
+        <h2 data-i18n="pub.title">Selected publications</h2>
+        <p data-i18n="pub.subtitle">Publications and preprints listed in my CV.</p>
+      </div>
+      <div class="pub-list">
+        <article class="pub-item featured">
+          <div class="pub-year">2024</div>
+          <div>
+            <div class="pub-tags"><span>First Author</span><span>Wi-Fi Sensing</span></div>
+            <h3>WiDistill: Distilling Large-scale Wi-Fi Datasets with Trajectory Matching</h3>
+            <p data-i18n="pub.widistill">Dataset distillation and trajectory matching for improving training efficiency and cross-user generalization in large-scale Wi-Fi sensing.</p>
+            <div class="pub-links"><a href="https://arxiv.org/abs/2410.04073" target="_blank" rel="noopener">arXiv:2410.04073 ↗</a></div>
+          </div>
+        </article>
+        <article class="pub-item">
+          <div class="pub-year">TCCN</div>
+          <div>
+            <div class="pub-tags"><span>Second Author</span><span>RF / Deep Learning</span></div>
+            <h3>Towards the Automatic Modulation Classification with Adaptive Wavelet Network</h3>
+            <p>IEEE Transactions on Cognitive Communications and Networking</p>
+          </div>
+        </article>
+        <article class="pub-item">
+          <div class="pub-year">ICASSP</div>
+          <div>
+            <div class="pub-tags"><span>Second Author</span><span>Signal Classification</span></div>
+            <h3>AMC-NET: An Effective Network for Automatic Modulation Classification</h3>
+            <p>IEEE International Conference on Acoustics, Speech and Signal Processing</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-​	两间余一卒，荷戟独彷徨。
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/09/14/hello-world/" title="第一篇blog，啦啦啦啦"><img class="post_bg" src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一篇blog，啦啦啦啦"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/09/14/hello-world/" title="第一篇blog，啦啦啦啦">第一篇blog，啦啦啦啦</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-14T08:51:19.377Z" title="Created 2022-09-14 16:51:19">2022-09-14</time></span></div><div class="content">
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/tx.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">王天天~</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/09/23/%E8%B1%A1%E6%A3%8B%E6%84%9F%E6%82%9F1/" title="象棋感悟1"><img src="/img/cover3.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="象棋感悟1"/></a><div class="content"><a class="title" href="/2022/09/23/%E8%B1%A1%E6%A3%8B%E6%84%9F%E6%82%9F1/" title="象棋感悟1">象棋感悟1</a><time datetime="2022-09-23T15:33:30.738Z" title="Created 2022-09-23 23:33:30">2022-09-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/21/%E5%8D%9A%E5%AE%A2%E3%80%81%E7%AC%94%E8%AE%B0%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7/" title="博客、笔记的重要性"><img src="/img/cover2.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="博客、笔记的重要性"/></a><div class="content"><a class="title" href="/2022/09/21/%E5%8D%9A%E5%AE%A2%E3%80%81%E7%AC%94%E8%AE%B0%E7%9A%84%E9%87%8D%E8%A6%81%E6%80%A7/" title="博客、笔记的重要性">博客、笔记的重要性</a><time datetime="2022-09-21T15:08:12.911Z" title="Created 2022-09-21 23:08:12">2022-09-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/09/14/hello-world/" title="第一篇blog，啦啦啦啦"><img src="/img/1.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="第一篇blog，啦啦啦啦"/></a><div class="content"><a class="title" href="/2022/09/14/hello-world/" title="第一篇blog，啦啦啦啦">第一篇blog，啦啦啦啦</a><time datetime="2022-09-14T08:51:19.377Z" title="Created 2022-09-14 16:51:19">2022-09-14</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">September 2022</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-09-23T15:42:56.538Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 王天天~</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+    <section id="experience" class="section muted-bg">
+      <div class="container">
+        <p class="section-kicker" data-i18n="nav.experience">Experience</p>
+        <div class="section-head"><h2 data-i18n="exp.title">Research experience</h2></div>
+        <div class="timeline">
+          <article>
+            <div class="time">2026 — 2028</div>
+            <div><h3 data-i18n="exp.e1.title">Human-Centered Robotics & Human-Computer Interaction</h3><p class="place" data-i18n="exp.e1.place">The University of Tokyo</p><p data-i18n="exp.e1.body">Multimodal perception, shared autonomy, robotic augmentation, and adaptive human-machine collaboration.</p></div>
+          </article>
+          <article>
+            <div class="time">2023 — 2026</div>
+            <div><h3 data-i18n="exp.e2.title">Multimodal Human Sensing & Activity Recognition</h3><p data-i18n="exp.e2.body">Wi-Fi CSI, wearable IMUs, computer vision, human identification, 3D pose estimation, and dataset distillation.</p></div>
+          </article>
+          <article>
+            <div class="time">2021 — 2023</div>
+            <div><h3 data-i18n="exp.e3.title">RF Signal Processing & Machine Learning</h3><p class="place" data-i18n="exp.e3.place">Key Laboratory of Intelligent Perception and Image Understanding</p><p data-i18n="exp.e3.body">Deep learning and time-frequency representations for robust automatic modulation classification.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section container">
+      <p class="section-kicker" data-i18n="nav.education">Education</p>
+      <div class="education-grid">
+        <article class="edu-card">
+          <div class="edu-mark">UT</div>
+          <div><p class="date">2026.10 — 2028.10 (Expected)</p><h3 data-i18n="edu.ut.title">The University of Tokyo</h3><p data-i18n="edu.ut.degree">M.S. in Information Science and Technology</p><p class="subtle" data-i18n="edu.ut.dept">Department of Information Physics and Computing</p></div>
+        </article>
+        <article class="edu-card">
+          <div class="edu-mark">XDU</div>
+          <div><p class="date">2020.09 — 2024.07</p><h3 data-i18n="edu.xdu.title">Xidian University</h3><p data-i18n="edu.xdu.degree">B.Eng. in Artificial Intelligence, Turing Program</p><p class="subtle" data-i18n="edu.xdu.detail">Selected among 40 students from 1,450 undergraduates · GPA 3.7/4.0</p></div>
+        </article>
+      </div>
+      <div class="award-banner"><strong data-i18n="award.title">Award</strong><span data-i18n="award.body">Kaggle G2Net: Detecting Continuous Gravitational Waves — Silver Medal, Top 5% (2023)</span></div>
+    </section>
+
+    <section id="blog" class="section muted-bg">
+      <div class="container blog-row">
+        <div><p class="section-kicker" data-i18n="nav.blog">Notes</p><h2 data-i18n="blog.title">Older writing, kept as an archive.</h2><p data-i18n="blog.body">My previous Hexo posts remain available as a small personal archive.</p></div>
+        <a class="button" href="/archives/" data-i18n="blog.button">View old archive →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Tiantian Wang</span>
+      <span data-i18n="footer.text">Academic homepage · Tokyo</span>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
